@@ -1,0 +1,14 @@
+{
+	"partitions": [
+		{
+			"partitionName": "/dev/sda3",
+			"primary": "True",
+			"mapperName": "/dev/mapper/videocrypt",
+			"mountPoint": "/mnt/videocrypt"
+		}	
+	],
+	"poolName": "nevisPool",
+	"poolMountPoint": "/nevis",
+	"poolMode": "epmfs",
+	"type": "multiple"
+}

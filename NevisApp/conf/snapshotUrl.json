@@ -1,0 +1,13 @@
+{"list":[
+			{
+			"model": "",
+			"vendor": "hikvision",
+			"snapshotURL":"/picture"
+			},
+			{
+			"model": "",
+			"vendor": "axis",
+			"snapshotURL":"/axis-cgi/jpg/image.cgi"
+			}
+		]	
+}

@@ -1,0 +1,39 @@
+{
+    "NTPServer": "it.pool.ntp.org",
+    "SchedaReteNevis": "bond0",
+    "camera": [
+        {
+            "audio": "0",
+            "depthRec": "100",
+            "description": "camera111 H265",
+            "encoder": "native",
+            "ipAddress": "10.28.1.6",
+            "macAddress": "A4:14:37:34:EF:98",
+            "model": "h265",
+            "password": "Softstrategy2017",
+            "quality": "HD",
+            "sensorId": "1",
+            "url": "rtsp://10.28.1.6:554/Streaming/Channels/101/",
+            "username": "admin",
+            "vendor": "hikvision",
+            "videoSourceId": "CAM-101"
+        },
+        {
+            "audio": "0",
+            "depthRec": "100",
+            "description": "camera frontale",
+            "encoder": "native",
+            "ipAddress": "10.28.0.52",
+            "macAddress": "ac:cc:8e:42:ea:8c",
+            "model": "p3904",
+            "password": "admin",
+            "quality": "HD",
+            "sensorId": "1",
+            "url": "rtsp://10.28.0.52/axis-media/media.amp?fps=30\\&videomaxbitrate=1000\\&audio=0",
+            "username": "admin",
+            "vendor": "axis",
+            "videoSourceId": "IPCAM1-LFAM-CN01"
+        }
+    ],
+    "configVersion": "2"
+}

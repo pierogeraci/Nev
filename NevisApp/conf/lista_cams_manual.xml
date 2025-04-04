@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<nevis-cameras>
+  <nevis-camera id="1">
+    <vendor>axis</vendor>
+    <model>p3904</model>
+    <ipAddress>10.28.0.52</ipAddress>
+    <httpPort>80</httpPort>
+    <macAddress>ac:cc:8e:42:ea:8c</macAddress>
+    <isOnvif>false</isOnvif>
+    <inputConnectors>1</inputConnectors>
+  </nevis-camera>
+  </nevis-cameras>
