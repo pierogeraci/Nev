@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="NevisEngine">
+
+    <target name="display_maven_classpaths">
+      <echo message="compile classpath: ${compile_classpath}"/>
+      <echo message="runtime classpath: ${runtime_classpath}"/>
+      <echo message="test classpath:    ${test_classpath}"/>
+      <echo message="plugin classpath:  ${plugin_classpath}"/>
+    </target>
+	
+	
+
+</project>

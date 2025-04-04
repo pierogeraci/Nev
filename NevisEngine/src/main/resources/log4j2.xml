@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" packages="it.softstrategy.nevis.log">
+    <!-- <Properties>
+        <Property name="basePath">${env:NEVIS_HOME}/log</Property>
+    </Properties> --> 
+ 
+    <Appenders>
+        <!--  <RollingFile name="fileLogger" fileName="${basePath}/nevis_engine.log" filePattern="${basePath}/nevis_engine-%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingFile>  -->
+         <RESTAppender name="restLogger" sender="NEVIS_ENGINE" ip="0.0.0.0" port="8080" 
+        	path="api/system/addlog" >
+        	<PatternLayout>
+                <pattern>[%t] %c{1} - %msg%n</pattern>
+            </PatternLayout>
+        </RESTAppender>  
+ 
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout   pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
+        </Console> 
+    </Appenders>
+    <Loggers>
+        <Logger name="it.softstrategy.nevis" level="debug" additivity="true">
+        	<appender-ref ref="restLogger" />  
+        	<!--<appender-ref ref="fileLogger" level="debug" /> --> 
+        </Logger>
+        <Root level="debug" additivity="false">
+            <appender-ref ref="console" /> 
+        </Root>
+    </Loggers>
+</Configuration>
