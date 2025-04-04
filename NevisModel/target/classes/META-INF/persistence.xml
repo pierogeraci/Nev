@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="NevisModel">
+	
+        <description>
+            Persistence unit for the JPA Entities of NeVis
+        </description>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <!-- <class>it.softstrategy.nevis.model.Camera</class>
+        <class>it.softstrategy.nevis.model.CameraHistory</class>
+        <class>it.softstrategy.nevis.model.CameraTemplate</class>
+        <class>it.softstrategy.nevis.model.FileRecording</class>
+        <class>it.softstrategy.nevis.model.FileRecordingHistoryAsync</class>
+        <class>it.softstrategy.nevis.model.LogAccessi</class>
+        <class>it.softstrategy.nevis.model.LogEngine</class>
+        <class>it.softstrategy.nevis.model.LogMonitor</class>
+        <class>it.softstrategy.nevis.model.LogRecorder</class>
+        <class>it.softstrategy.nevis.model.LogRecorderDebug</class>
+        <class>it.softstrategy.nevis.model.LogRecorderError</class>
+        <class>it.softstrategy.nevis.model.LogSession</class>
+        <class>it.softstrategy.nevis.model.Multicast</class>
+        <class>it.softstrategy.nevis.model.Profile</class>
+        <class>it.softstrategy.nevis.model.Recording</class> -->
+        <class>it.softstrategy.nevis.model.Role</class>
+        <!-- <class>it.softstrategy.nevis.model.Server</class>
+        <class>it.softstrategy.nevis.model.ServerHistory</class>
+        <class>it.softstrategy.nevis.model.Sistema</class>
+        <class>it.softstrategy.nevis.model.Slot</class>
+        <class>it.softstrategy.nevis.model.SlotCam</class>
+        <class>it.softstrategy.nevis.model.StatusRec</class> -->
+        <class>it.softstrategy.nevis.model.User</class>
+
+        <properties>
+            <!-- <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;MVCC=TRUE" />
+            <property name="javax.persistence.jdbc.user" value="sa" />
+            <property name="javax.persistence.jdbc.password" value="" /> -->
+            <property name="javax.persistence.jdbc.driver" value="org.sqlite.JDBC" /> 
+            <!-- <property name="javax.persistence.jdbc.url" value="jdbc:sqlite::resource:nevis.db" /> -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:sqlite:src/test/resources/nevis.db" />
+            <property name="javax.persistence.jdbc.user" value="" />
+            <property name="javax.persistence.jdbc.password" value="" />
+
+			<property name="hibernate.dialect" 
+                  value="org.hibernate.dialect.SQLiteDialect"/>
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+        </properties>
+	</persistence-unit>
+</persistence>
