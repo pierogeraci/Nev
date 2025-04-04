@@ -1,0 +1,14 @@
+NeVis License Activation
+=============
+Questo progetto ha come obiettivo la produzione di un file eseguibile
+che crei un file di richiesta di attivazione nevis
+
+
+
+SVN
+---
+Usa il file ".svnignore" per indicare ad svn quali files e quali cartelle non considerare.
+Aggiungi o rimuovi i nomi dei file o delle cartella ( si possono usare regular expression
+come ad esempio "*.class" - per le cartelle usa solo il nome senza carattere "/" prima o dopo)
+dal file e poi lancia il seguente comando a partire dalla root di progetto: 
+	"svn propset svn:ignore -R -F .svnignore ."
